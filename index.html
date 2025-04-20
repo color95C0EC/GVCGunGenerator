@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GVCGunGenerator</title>
+</head>
+
+<body>
+    <input type="text" id="gun-name-input" placeholder="アイテム名"><br>
+    <input type="number" id="ammo-max-input" placeholder="最大装弾数" min="1"><br>
+    <!-- <input type="text" id="ammo-type-input" placeholder="弾種"><br>    MEMO: 選べるやつにする -->
+    <input type="text" id="damage-input" placeholder="威力（BS, エンチャなし）"><br>
+    <input type="text" id="bulet-speed-input" placeholder="弾速"><br>
+    <input type="text" id="spread-input" placeholder="集弾率"><br>
+    <input type="text" id="spread-ads-input" placeholder="集弾率（ADS）"><br>
+    <input type="text" id="recoil-input" placeholder="反動"><br>
+    <input type="text" id="recoil-ads-input" placeholder="反動（ADS）"><br>
+    <input type="text" id="reload-time-input" placeholder="リロード時間"><br>
+    <input type="text" id="burst-cnt-input" placeholder="burstCount"><br>
+    <input type="text" id="burst-cycle-input" placeholder="burstCycle"><br>
+    <input type="text" id="shot-sound-input" placeholder="銃声"><br>
+    <input type="text" id="bullet-particle-input" placeholder="bulletParticle"><br>
+    <input type="text" id="bullet-cnt-input" placeholder="bulletCount"><br>
+    <input type="text" id="remove-ammo-per-shot-input" placeholder="removeAmmoPerShot"><br>    <!-- MEMO: 下の方のトグルに隠す -->
+    <input type="text" id="hit-sound-input" placeholder="ヒット音"><br>    <!-- MEMO: 選べるやつにする -->
+    <input type="text" id="hit-kill-time-input" placeholder="hitKillTime"><br>
+
+    <input type="radio" name="gen-type" id="gen-type-copy" checked>
+        <label for="gen-type-copy">コマンドをクリップボードにコピー</label>
+    <input type="radio" name="gen-type" id="gen-type-json">
+        <label for="gen-type-json">LootTable用のJSONをダウンロード</label>
+
+    <button id="gen-btn">Generate</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
